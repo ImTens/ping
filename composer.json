@@ -10,13 +10,20 @@
     "authors": [
         {
             "name": "ImTens",
-            "email": "",
+            "email": "fabian.stappen@gmx.de",
             "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/spatie/ping"
         }
     ],
     "require": {
         "php": "^8.4",
-        "symfony/process": "^7.0"
+        "symfony/process": "^7.0",
+        "ImTens/ping": "1.*"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
