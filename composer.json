@@ -1,6 +1,6 @@
 {
     "name": "imtens/ping",
-    "description": "Run an ICMP ping and get structured results",
+    "description": "Run an ICMP ping and get structured results that works for windows",
     "keywords": [
         "imtens",
         "ping"
