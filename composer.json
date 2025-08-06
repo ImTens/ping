@@ -1,16 +1,16 @@
 {
-    "name": "spatie/ping",
+    "name": "imtens/ping",
     "description": "Run an ICMP ping and get structured results",
     "keywords": [
-        "spatie",
+        "imtens",
         "ping"
     ],
-    "homepage": "https://github.com/spatie/ping",
+    "homepage": "https://github.com/imtens/ping",
     "license": "MIT",
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
+            "name": "ImTens",
+            "email": "",
             "role": "Developer"
         }
     ],
