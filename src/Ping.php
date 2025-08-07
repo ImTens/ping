@@ -145,9 +145,11 @@ class Ping
     {
         $this->currentCommand[] = (PHP_OS_FAMILY === 'Windows') ? '-w' : '-W';
 
-        if ($this->isRunningOnMacOS()) {
+        if ($this->isRunningOnMacOS())
+        {
             $this->currentCommand[] = (string) $this->convertTimeoutToMilliseconds();
-        } else {
+        } else
+        {
             $this->currentCommand[] = (string) $this->timeoutInSeconds;
         }
 
@@ -171,7 +173,8 @@ class Ping
 
     protected function addOptionalPacketSizeOption(): self
     {
-        if ($this->isCustomPacketSize()) {
+        if ($this->isCustomPacketSize())
+        {
 
             if(PHP_OS_FAMILY === 'Windows')
             {
@@ -190,7 +193,8 @@ class Ping
     protected function addOptionalTtlOption(): self
     {
 
-        if ($this->isCustomTtl()) {
+        if ($this->isCustomTtl())
+        {
             if(PHP_OS_FAMILY === 'Windows')
             {
                 $this->currentCommand[] = '-i';
@@ -239,7 +243,8 @@ class Ping
 
     protected function addOptionalShowLostPacketsOption(): self
     {
-        if ($this->showLostPackets && ! $this->isRunningOnMacOS() || PHP_OS_FAMILY !== 'Windows') {
+        if ($this->showLostPackets && ! $this->isRunningOnMacOS() || PHP_OS_FAMILY !== 'Windows')
+        {
             $this->currentCommand[] = '-O';
         }
 
